@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Cards</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+</head>
+<style>
+    .body {
+        background-color: rgb(51, 51, 143);
+    }
+</style>
+<body>
+    <h1>Planetas do Sistema Solar</h1>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="https://wallpaperaccess.com/full/552561.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Terra</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://images.radio.com/aiu-media/GettyImages1394287943-9820f856-6ee4-4104-ad80-1f4be7a2749b.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>Marte</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://wallpaperaccess.com/full/223952.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>Júpiter</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <article class="card text-bg-dark">
+                    <img src="https://thumbs.dreamstime.com/b/terra-do-planeta-isolada-no-fundo-branco-parte-sistema-solar-119686345.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">Terra</h4>
+                        <h5 class="card-subtitle">A Terra é o terceiro planeta mais próximo do Sol, sendo o quinto maior planeta do Sistema Solar</h5>
+                    </div>
+                </div>
+            </article>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <img src="https://www.cloudynights.com/uploads/gallery/album_20416/gallery_376518_20416_57502.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">Júpiter</h4>
+                        <h5 class="card-subtitle">Júpiter é o maior planeta do Sistema Solar, além de gasoso é o quinto planeta mais próxima do Sol </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <img src="https://img.freepik.com/fotos-premium/ilustracion-3d-planeta-marte-aislado-elementos-imagen-cielo-nocturno-negro-proporcionados-nasa_510958-640.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">Marte</h4>
+                        <h5 class="card-subtitle">Marte é o quarto planeta a partir do Sol, o segundo menor do Sistema Solar, atrás apenas de Mercúrio</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
